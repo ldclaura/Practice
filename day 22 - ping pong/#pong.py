@@ -1,0 +1,10 @@
+#pong
+
+#create the screen
+#create and move paddle
+#create another paddle
+#create the ball and make it move
+#detect collision with wall and bounce
+#detect collision with paddle
+#detect when paddle misses
+#keep score
