@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>5 x 6 is: {{5 * 6}}</h1>
+    <h2>random number is: {{num}}</h2>
+<a href="{{ url_for('get_blog', num=3) }}">Go to blog</a> <!--url_for("function name")-->
+</body>
+<footer>
+    <p class="footerstyle">© Copyright {{year}}. Built by Laura Cain.</p>
+</footer>
+</html>
