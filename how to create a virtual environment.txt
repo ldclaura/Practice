@@ -1,0 +1,34 @@
+-----------------------------------------------------------------------------------
+
+
+DO THIS!!!!:
+python3 -m venv venv 
+if the venv is missing a few things in scripts (like activate or bin or something)
+do
+deactivate
+then python3 -m venv venv again
+
+OLD SOLUTION:
+python -m venv "C:\Users\laura\OneDrive\Desktop\Udemy Yu Shit\how to create virtual environment\venv"    
+& "venv\Scripts\activate" - unnessessary, vscode should automatically activate, idk if this even works.
+
+
+
+------------------------------------------------------------------
+
+ENVIRONMENT VARIABLES
+import os
+from dotenv import load_dotenv
+
+create .env file in folder with venv (NOT IN VENV FOLDER)
+put the environment variable in .env like this:
+MY_EMAIL="email@gmail.com"
+PASSWORD="thisismypassword123"
+
+in main.py:
+import os
+from dotenv import load_dotenv
+MY_EMAIL = os.getenv("MY_EMAIL")
+PASSWORD = os.getenv("PASSWORD")
+
+REFER TO PYTHON DAY 47
