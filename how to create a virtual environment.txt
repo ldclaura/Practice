@@ -8,9 +8,12 @@ do
 deactivate
 then python3 -m venv venv again
 
+NOTE: if you create the venv and your python file is still not connected to it, go into scripts then drag Activate.ps1 to the terminal then press enter, your next python thing should have (venv) in green next to it. then you can install ur packages and itll install into venv
+
 OLD SOLUTION:
 python -m venv "C:\Users\laura\OneDrive\Desktop\Udemy Yu Shit\how to create virtual environment\venv"    
 & "venv\Scripts\activate" - unnessessary, vscode should automatically activate, idk if this even works.
+
 
 
 
