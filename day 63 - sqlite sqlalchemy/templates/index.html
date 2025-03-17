@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>My Library</h1>
+      {% if db_books == [] %}
+        <h2>Library is empty.</h2>
+      {% else %}
+        {% for x in db_books %}
+        <ul>
+          <li> {{ x.__dict__['title'] }} - {{ x.__dict__['author'] }} - {{ x.__dict__['rating'] }}/10 <a href="{{url_for('change_rating', id=x.__dict__['id'])}}">Edit Rating</a></li>
+        </ul>
+        {% endfor %}
+      {% endif %}
+
+
+    <a href="{{ url_for('add') }}">Add New Book</a>
+  </body>
+</html>
