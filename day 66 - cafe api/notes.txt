@@ -1,0 +1,30 @@
+REpresentational State Transfer - REST
+
+
+client -> server
+http request to server (language used to make request)
+or maybe ftp request (file transfer protocol)
+
+http = French - ftp = Italian, basically make sure you use same protocol.
+
+API is like a menu
+
+REST = architectural style
+baroque, gothic, neoclassical
+architectural style for designing APIs
+
+SOAP, GraphQL, Falcor - example of others
+
+REST is gold standard
+
+
+RESTFUL RULES:
+
+USE HTTP REQUEST VERBS
+get, post, put, patch(new), delete
+USE SPECIFIC PATTERN OF ROUTES/ENDPOINT URLs
+GET /articles - fetches ALL articles /articles/jack-bauer - fetches THE article on jack-bauer
+POST /articles - creates one new article
+PUT /articles/jack-bauer - updates the article on jack-bauer
+PATCH /articles/jack-bauer - updates the article on jack-bauer
+DELETE /articles - delete all the articles /articles/jack-bauer - deletes the article on jack bauer
