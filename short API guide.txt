@@ -1,0 +1,25 @@
+basic API get with params, header, and environment variables guide
+
+import requests
+import os
+#need dotennv and load_dotenv for environment variable
+from dotenv import load_dotenv
+load_dotenv()
+
+
+API_KEY = os.getenv("NOOKIPEDIA_API_KEY") #.env file, written as:
+#NOOKIPEDIA_API_KEY=12345-12345-12345
+#replace numbers with actual key
+URL = "https://api.nookipedia.com/villagers"
+
+headers = {
+    "X-API-Key" : API_KEY,
+}
+
+params = {
+    "name" : "Ribbot"
+}
+response = requests.get(url=URL, params=params, headers=headers) #headers=headers NOT header=header
+
+result = response.json()
+print(result)
